@@ -1,12 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
 
 const Navbar = () => {
-    const navLink = <div class ="flex">
+    const navLink = <div className="flex flex-col md:flex-row gap-5 font-bold text-black md:text-white">
 
-     <li><Link to="/home">Home</Link></li>
-     <li><Link to="/about">About</Link></li>
-     <li><Link to="/login">Login</Link></li>
+    <Link to="/home">HOME</Link>
+    <Link to="/contact">CONTACT US</Link>
+    <Link to="/ourMenu">OUR MENU</Link>
+    <Link to="/ourShop">OUR SHOP</Link>
+    <Link to="/login">LOGIN</Link>
     </div>
   return (
     <div>
@@ -36,7 +37,7 @@ const Navbar = () => {
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">
-      <img className="w-16" src={logo} alt="" />
+     <h1 className="">Six Star <br /><span className="text-sm">Restaurant</span></h1>
     </a>
   </div>
   <div className="navbar-end hidden lg:flex">
